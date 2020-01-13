@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "dda78bdc-385f-4b2f-8e3e-7887d9c1f0bd",
+		"name": "Stores-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get stores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/store",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"my_store3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/store",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get store",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/store/my_store2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"my_store2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get store items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/store/my_store2/item",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"my_store2",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create store item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"go lang book\",\n\t\"price\":2300\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/store/my_store3/item",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"my_store3",
+						"item"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
